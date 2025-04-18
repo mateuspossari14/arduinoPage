@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino | Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-first_level" id="nav-first_level">
+                <div class="nav-first_level--left">
+                    <div class="nav-first_level--left--apps">
+                        <div class="nav--apps-links">
+                            <a href="https://www.arduino.cc/pro" target="_blank">PROFISSIONAL</a>
+                        </div>
+                    </div>
+                    <div class="nav-first_level--left--apps">
+                        <div class="nav--apps-links">
+                            <a href="https://www.arduino.cc/edu" target="_blank">EDUCAÇÃO</a>
+                        </div>
+                    </div>
+                    <div class="nav-first_level--left--apps">
+                        <div class="nav--apps-links">
+                            <a href="https://store.arduino.cc/" target="_blank">LOJA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-first_level--right">
+                    <div class="nav-first_level--right--search">
+                        <form action="GET">
+                            <img src="./assets/images/icons - aboutPage_softwarePage/icon-search.png" id="search-icon" alt="">
+                            <input type="text" name="Input-form" placeholder="Pesquise em Arduino.cc">
+                        </form>
+                    </div>
+                    <div class="nav-first_level--right--cloud">
+                        <a href="https://app.arduino.cc/" id="cloud" target="_blank">
+                            <img src="./assets/images/icons - aboutPage_softwarePage/icon-cloud.png" id="cloud-icon" alt="Cloud image">
+                        </a>
+                    </div>
+                    <div class="nav--apps-links borderNone">
+                        <a href="index.html" target="_blank">ENTRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-second_level">
+                <a href="https://www.arduino.cc/" class="nav-second_level--arduinoLogo" target="_blank">
+                    <img src="./assets/images/icons - aboutPage_softwarePage/icon-arduino.png" id="arduinoLogo" alt="Arduino logo">
+                </a>
+                <div class="nav-second_level--apps">
+                    <div class="nav--apps-links">
+                        <div class="nav--apps-links-app">
+                            <a href="./software.html">SOFTWARE</a>
+                        </div>
+                        <div class="nav--apps-links-app">
+                            <a href="./index.html">SOBRE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="comeBackTop">
+        <div class="container">
+            <aside>
+                <h5>TABELA DE COMPONENTES</h5>
+                <ul>
+                    <li>
+                        <a href="#h1Arduino">Início</a>
+                        <ul>
+                            <li><a href="#h2History">História</a></li>
+                            <li><a href="#h2BasicsComponents">Componentes básicos</a></li>
+                            <li><a href="#h2Hardware">Hardware</a></li>
+                            <li><a href="#h2Software">Software</a></li>
+                            <li><a href="#h2Aplications">Aplicações</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section>
+                <h1 id="h1Arduino">Arduino</h1>
+                <p>
+                    O Arduino é uma plataforma de hardware livre que permite a criação de
+                    objetos eletrônicos interativos. Desenvolvida na Itália, visa fornecer
+                    ferramentas de baixo custo para uma ampla gama de usuários. A placa Arduino
+                    é composta por um microcontrolador Atmel AVR, linhas de entrada/saída e uma
+                    interface para comunicação com o computador. É programável em C/C++ e pode
+                    ser usada em projetos de automação, robótica e outras áreas2. Além disso,
+                    possui shields que expandem suas capacidades, permitindo a integração com
+                    outros dispositivos e sistemas. O nome “Arduino” vem de um bar italiano, e a
+                    plataforma ganhou popularidade rapidamente, com várias versões e clones disponíveis
+                    no mercado.
+                </p>
+
+                <h2 id="h2History">História</h2>
+                <p>
+                    A plataforma iniciou em 2005 na cidade italiana de Ivrea (Itália) com os pesquisadores David
+                    Cuartielles, David Mellis, Gianluca Martino, Massimo Banzi e, Tom Igoe. Inicialmente projetada
+                    com o intuito de interagir em projetos escolares de forma a ter um orçamento menor que outros
+                    sistemas de prototipagem disponíveis naquela época. O sucesso foi sinalizado com o obtenção de uma
+                    menção honrosa na categoria Comunidades Digitais em 2006 na premiação Prix Ars Electronica,
+                    além da marca de mais de 50 mil placas vendidas até outubro de 2008. <br><br>
+
+                    Atualmente, o seu hardware é feito através de um microcontrolador Atmel AVR, sendo que este não é um
+                    requisito formal e pode ser estendido se tanto ele quanto a ferramenta alternativa suportarem a
+                    linguagem arduino e forem aceites pelo seu projeto. Considerando esta característica, muitos
+                    projetos paralelos inspiram-se em cópias modificadas com placas de expansões, e acabam recebendo os
+                    seus próprios nomes
+                </p>
+
+                <h2 id="h2BasicsComponents">Componentes Básicos</h2>
+                <ul>
+                    <li>Microcontrolador, que realiza o controle das operações e instruções dadas à placa;</li>
+                    <li>
+                        Clock, controlado pelo cristal oscilador, geralmente é de 16 MHz, fornecer um ritmo
+                        para as atividades do microcontrolador;
+                    </li>
+                    <li>
+                        Módulo de comunicação com um computador, composto por uma entrada USB e um microcontrolador
+                        dedicado, uma ponte para upload de um código para o Arduino;
+                    </li>
+                    <li>Conector de alimentação;</li>
+                    <li>Conectores para sensores, esses fazem ou leitura analógica ou leitura digital.</li>
+                </ul>
+
+                <h2 id="h2Hardware">Hardware</h2>
+                <p>
+                    É toda parte "física", ou seja, todas as peças... <br>
+                    O **Arduino** é uma plataforma de prototipagem eletrônica de placa única e hardware livre. Ela
+                    consiste em um microcontrolador Atmel AVR de 8 bits, acompanhado de componentes adicionais para
+                    facilitar a programação e integração em outros circuitos. Os conectores são expostos de maneira
+                    padrão, permitindo que o microcontrolador seja conectado a módulos expansíveis chamados "shields".
+                    Os Arduinos originais usam chips megaAVR, como ATmega8, ATmega168, ATmega328 e ATmega1280, mas
+                    clones também utilizam outros processadores. Além disso, a maioria das placas inclui um regulador
+                    linear de 5 volts e um oscilador de cristal de 16 MHz (ou variantes com ressonador cerâmico). <br>
+                    <br>
+                </p>
+                <div class="section--containerImageHardware">
+                    <img src="./assets/images/images - aboutPage/ArduinoBreadboard.jpeg" alt="Imagem da placa arduino">
+                </div>
+                <p>
+                    O microcontrolador é pré-programado com um bootloader, simplificando o carregamento de programas na
+                    memória flash embutida. A conexão serial varia em cada versão, mas a maioria utiliza uma conexão
+                    RS-232 para comunicação com o software do Arduino. Existem diferentes métodos de transmissão de
+                    dados, incluindo placas programáveis via USB com chips adaptadores USB-para-Serial, como o FTDI
+                    FT232. Além disso, os pinos de entrada/saída (E/S) dos microcontroladores permitem a conexão com
+                    outros circuitos, e modelos como o Nano e o Boarduino têm conectores machos na parte inferior para
+                    uso em protoboards.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xCtruN0MwkA?si=y1v-K4T56dcnli5D"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+                <h2 id="h2Software">Software</h2>
+                <p>
+                    O Arduino IDE é uma aplicação multiplataforma escrita em Java derivada dos projetos Processing e
+                    Wiring.[24][28] É esquematizado para introduzir a programação para artistas e para pessoas não
+                    familiarizadas com o desenvolvimento de software. Inclui um editor de código com recursos de realce
+                    de sintaxe, parênteses correspondentes e identação automática, sendo capaz de compilar e carregar
+                    programas para a placa com um único clique. Com isso não há a necessidade de editar Makefiles ou
+                    rodar programas em ambientes de linha de comando. <br><br>
+
+                    Tendo uma biblioteca chamada "Wiring", ele possui a capacidade de programar em C/C++. Isto permite
+                    criar com facilidade muitas operações de entrada e saída, tendo que definir apenas duas funções no
+                    pedido para fazer um programa funcional: <br>
+
+                </p>
+                <ul>
+                    <li>setup() – Inserida no início, na qual pode ser usada para inicializar configuração, e</li>
+                    <li>loop() – Chamada para repetir um bloco de comandos ou esperar até que seja desligada.</li>
+                </ul>
+                <div class="section--containerImageHardware">
+                    <img src="./assets/images/images - aboutPage/code-arduino.png" alt="Imagem de código arduino">
+                </div>
+
+                <h2 id="h2Aplications">Aplicações</h2>
+                <p>
+                    A principal finalidade do Arduino num sistema é facilitar a prototipagem, implementação ou emulação
+                    do controle de sistemas interativos, a nível doméstico, comercial ou móvel, da mesma forma que o CLP
+                    controla sistemas de funcionamento industriais. Com ele é possível enviar ou receber informações de
+                    basicamente qualquer sistema eletrônico, como identificar a aproximação de uma pessoa e variar a
+                    intensidade da luz do ambiente conforme a sua chegada. Ou abrir as janelas de um escritório de
+                    acordo com a intensidade da luz do sol e temperatura ambiente. <br><br>
+
+                    Os campos de atuação para o controle de sistemas são imensos, podendo ter aplicações na área de
+                    impressão 3D, robótica, engenharia de transportes, engenharia agronômica, musical. Ou até mesmo
+                    em ambiente escolar, para o desenvolvimento de experimentos otimizando assim a aprendizagem dos
+                    alunos tanto na área de física quanto de química.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer--first_level">
+                <div class="footer--first_level-left">
+                    <h2>ARDUINO</h2>
+                </div>
+                <div class="footer--first_level-right">
+                    <a href="#comeBackTop">Volte para o início</a>
+                </div>
+            </div>
+
+            <div class="footer--second_level">
+                <div class="footer-second_level--left">
+                    <p>Desenvolvido por Mateus Possari</p>
+                    <p>Site oficial e aptado do arduino</p>
+                    <p>2º Desenvolvimento de Sistemas</p>
+                    <p>Etec Profª Marinês Teodoro de Freitas Almeida</p>
+                </div>
+                <div class="footer-second_level--right">
+                    <h3>SIGA ME</h3>
+                    <div class="second_level--right--socialmedia">
+                        <div class="right--socialmedia--apps-app">
+                            <a href="https://www.linkedin.com/in/mateuspossari" target="_blank">
+                                <img src="./assets/images/icons - aboutPage_softwarePage/linkedin.png" alt="linkedin icon">
+                            </a>
+                        </div>
+                        <div class="right--socialmedia--apps-app">
+                            <a href="https://www.instagram.com/mateuspossari_?igsh=aXF1amd4Ymd4bG9v" target="_blank">
+                                <img src="./assets/images/icons - aboutPage_softwarePage/instagram.png" alt="instagram icon">
+                            </a>
+                        </div>
+                        <div class="right--socialmedia--apps-app">
+                            <a href="https://github.com/mateuspossari14" target="_blank">
+                                <img src="./assets/images/icons - aboutPage_softwarePage/github.png" alt="github icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

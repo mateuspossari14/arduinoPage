@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans, Lucida Grande, Lucida, Verdana, sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    min-height: 100px;
+}
+
+header nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+
+/* HEADER/NAV - OPACITY */
+.nav--apps-links a:hover,
+.nav-first_level--right--cloud #cloud:hover,
+.nav-second_level--arduinoLogo img:hover {
+    opacity: 0.5;
+}
+
+
+/* HEADER/NAV - FIRST LEVEL - LEFT  */
+.nav-first_level {
+    height: 100%;
+    display: flex;
+    font-size: 10.5px;
+    background-color: #008184;
+    justify-content: space-between;
+}
+
+.nav-first_level--left {
+    height: 100%;
+    display: flex;
+}
+
+.nav--apps-links {
+    cursor: pointer;
+    padding: 14px 20px;
+    border-right: 1px solid #7fcbcd;
+}
+
+.nav--apps-links a {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-decoration: none
+}
+
+
+/* HEADER/NAV - FIRST LEVEL - RIGHT */
+.nav-first_level--right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-first_level--right .borderNone {
+    border-right: none;
+}
+
+.nav-first_level--right--search {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    padding: 0 12px;
+    align-items: center;
+    border-right: 1px solid #7fcbcd;
+}
+
+.nav-first_level--right--search form {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-radius: 30px;
+    position: relative;
+    align-items: center;
+    background-color: #006d70;
+}
+
+.nav-first_level--right--search img {
+    width: 14px;
+    height: auto;
+    margin: 0 12px 0 16px;
+}
+
+.nav-first_level--right--search input {
+    border: 0;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    padding-right: 16px;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+}
+
+.nav-first_level--right--search input::placeholder {
+    color: #ccc;
+    font-family: Open Sans, Lucida Grande, Lucida, Verdana, sans-serif;
+}
+
+.nav-first_level--right--cloud {
+    height: 100%;
+    border-right: 1px solid #7fcbcd;
+}
+
+.nav-first_level--right--cloud a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-first_level--right--cloud a #cloud-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+
+/* HEADER/NAV - SECOND LEVEL  */
+.nav-second_level {
+    height: 57px;
+    display: flex;
+    border-top: 1px solid #7fcbcd;
+}
+
+.nav-second_level--arduinoLogo {
+    padding-left: 20px;
+}
+
+.nav-second_level--arduinoLogo img {
+    height: 100%;
+}
+
+
+/* HEADER/NAV - SECOND LEVEL - APPS */
+.nav-second_level {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    background-color: #008184;
+}
+
+.nav-second_level--apps {
+    width: 100%;
+    position: absolute;
+}
+
+.nav-second_level--apps .nav--apps-links {
+    gap: 20px;
+    height: 100%;
+    display: flex;
+    font-size: 12px;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN - CONTAINER & ASIDE*/
+main {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ecf1f1;
+}
+
+main .container {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.container aside {
+    flex: 1;
+    top: 100px;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+aside h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    padding: 16px 28px;
+    background-color: #7fcbcd;
+    font-family: Open Sans, sans-serif;
+}
+
+aside ul li {
+    padding: 10px 28px;
+}
+
+aside ul li a {
+    width: 100%;
+    display: inline;
+    font-size: 14px;
+    color: #008184;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+aside,
+section {
+    box-shadow: 0px 0px 15px #ccc;
+}
+
+/*MAIN - SECTION*/
+.container section {
+    flex: 2;
+    gap: 25px;
+    display: flex;
+    padding: 36px;
+    max-width: 800px;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+section h1 {
+    font-weight: 500;
+    font-size: 33px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #7fcbcd;
+}
+
+section h2 {
+    font-weight: 400;
+}
+
+section p {
+    line-height: 30px;
+}
+
+.section--containerImageHardware {
+    text-align: center;
+}
+
+.section--containerImageHardware img {
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    max-height: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+section ul {
+    padding-left: 30px;
+}
+
+section ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    height: 100%;
+    font-size: 11px;
+    background-color: #008184;
+    font-family: Open Sans, sans-serif;
+}
+
+.container-footer {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: inline-block;
+}
+
+
+/* FOOTER - FIRST_LEVEL */
+.container-footer .footer--first_level {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #7fcbcd;
+}
+
+.footer--first_level-left {
+    height: 100%;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer--first_level-left h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer--first_level-right {
+    height: 100%;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #7fcbcd;
+}
+
+.footer--first_level-right a {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* FOOTER - SECOND_LEVEL */
+.footer--second_level {
+    padding: 20px;
+    display: flex;
+    letter-spacing: 2px;
+    justify-content: space-around;
+}
+
+.footer-second_level--left {
+    flex-wrap: wrap;
+    line-height: 20px;
+}
+
+.footer-second_level--left p:hover {
+    color: yellow;
+}
+
+.second_level--right--socialmedia {
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.right--socialmedia--apps-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.right--socialmedia--apps-app img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.right--socialmedia--apps-app img:hover {
+    box-shadow: 0px 0px 5px #ccc;
+}
